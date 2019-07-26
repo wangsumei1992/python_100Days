@@ -27,8 +27,8 @@ class PasswordTest(unittest.TestCase):
 
             self.assertTrue(len(passwd) >= 6)
             msg = "user %s has a weak password" %(data['name'])
-            self.assertTrue(passwd != 'password', msg= msg)
             self.assertTrue(passwd != 'password123', msg= msg)
+            self.assertTrue(passwd != 'password', msg= msg)
 
 if __name__ == '__main__':
     unittest.main()
