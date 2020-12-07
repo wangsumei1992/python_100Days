@@ -1,9 +1,10 @@
+import time
 from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 # import time
 
-driver = webdriver.Chrome()
-# driver.get('https://www.baidu.com/')
+driver= webdriver.Ie()
+driver.get('https://www.baidu.com/')
 # at = driver.find_element_by_id("kw").get_attribute('type')
 # at1 = driver.find_element_by_id("kw").get_attribute('name')
 # print(at, at1)
@@ -22,8 +23,7 @@ driver = webdriver.Chrome()
 #     if handle != current_handle:
 #         driver.switch_to.window(handle)
 #         print("login now")
-driver.get("http://www.youdao.com/")
-cookie = driver.get_cookies()
-print(cookie)
+# driver.get("http://www.youdao.com/")
+time.sleep(10)
 
 
